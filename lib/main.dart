@@ -17,6 +17,11 @@ class LabClass05 extends StatelessWidget {
         ),
         body: Row(
           children: [
+            Icon(
+              Icons.ac_unit,
+              size: 50,
+              color: const Color.fromARGB(183, 7, 160, 255),
+            ),
             Text(
               "Hi, ",
               style: TextStyle(

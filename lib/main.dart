@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 void main() {
   runApp(const LabClass05());
@@ -11,28 +12,49 @@ class LabClass05 extends StatelessWidget {
     return MaterialApp(
       title: "Basic Flutter UI - 02",
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Basic Flutter UI - 02"),
-          backgroundColor: Colors.blue,
-        ),
-        body: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Container(
-            height: 600,
-            child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: List.generate(
-                  100,
-                  (index) => Icon(
-                    Icons.access_alarm_rounded,
-                    size: index.toDouble(),
+          appBar: AppBar(
+            title: Text("Basic Flutter UI - 02"),
+            backgroundColor: Colors.blue,
+          ),
+          body: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(
+                Iconsax.activity,
+                size: 50,
+                color: Colors.blue,
+              ),
+              Icon(
+                Iconsax.activity,
+                size: 50,
+                color: Colors.black,
+              ),
+              Icon(
+                Iconsax.activity,
+                size: 50,
+                color: Colors.red,
+              ),
+              Row(
+                children: [
+                  Icon(
+                    Iconsax.activity,
+                    size: 50,
+                    color: Colors.blue,
+                  ),
+                  Icon(
+                    Iconsax.activity,
+                    size: 50,
                     color: Colors.black,
                   ),
-                )),
-          ),
-        ),
-      ),
+                  Icon(
+                    Iconsax.activity,
+                    size: 50,
+                    color: Colors.red,
+                  ),
+                ],
+              )
+            ],
+          )),
     );
   }
 }

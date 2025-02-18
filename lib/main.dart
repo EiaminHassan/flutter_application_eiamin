@@ -17,7 +17,8 @@ class LabClass05 extends StatelessWidget {
         ),
         body: Container(
           height: double.infinity,
-          child: Row(
+          width: double.infinity,
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -27,12 +28,12 @@ class LabClass05 extends StatelessWidget {
                 color: Colors.black,
               ),
               Icon(
-                Icons.ac_unit,
+                Icons.account_tree,
                 size: 30,
                 color: Colors.black,
               ),
               Icon(
-                Icons.ac_unit,
+                Icons.access_alarm,
                 size: 30,
                 color: Colors.black,
               ),

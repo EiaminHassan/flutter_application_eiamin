@@ -15,9 +15,30 @@ class LabClass05 extends StatelessWidget {
           title: Text("Basic Flutter UI - 02"),
           backgroundColor: Colors.blue,
         ),
-        body: Text(
-          "Basic Flutter UI - 02",
-          style: TextStyle(fontSize: 30),
+        body: Row(
+          children: [
+            Text(
+              "Hi, ",
+              style: TextStyle(
+                color: Colors.yellow,
+                fontSize: 30,
+              ),
+            ),
+            Text(
+              "This is ",
+              style: TextStyle(
+                color: Colors.red,
+                fontSize: 30,
+              ),
+            ),
+            Text(
+              "Flutter",
+              style: TextStyle(
+                color: Colors.blue,
+                fontSize: 30,
+              ),
+            ),
+          ],
         ),
       ),
     );

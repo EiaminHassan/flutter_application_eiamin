@@ -15,34 +15,29 @@ class LabClass05 extends StatelessWidget {
           title: Text("Basic Flutter UI - 02"),
           backgroundColor: Colors.blue,
         ),
-        body: Row(
-          children: [
-            Icon(
-              Icons.star,
-              size: 50,
-              color: const Color.fromARGB(228, 255, 7, 85),
-            ),
-            Icon(
-              Icons.star,
-              size: 50,
-              color: const Color.fromARGB(203, 255, 7, 85),
-            ),
-            Icon(
-              Icons.star,
-              size: 50,
-              color: const Color.fromARGB(203, 255, 7, 85),
-            ),
-            Icon(
-              Icons.star,
-              size: 50,
-              color: const Color.fromARGB(212, 255, 7, 85),
-            ),
-            Icon(
-              Icons.star,
-              size: 50,
-              color: const Color.fromARGB(53, 255, 7, 85),
-            ),
-          ],
+        body: Container(
+          height: double.infinity,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.ac_unit,
+                size: 30,
+                color: Colors.black,
+              ),
+              Icon(
+                Icons.ac_unit,
+                size: 30,
+                color: Colors.black,
+              ),
+              Icon(
+                Icons.ac_unit,
+                size: 30,
+                color: Colors.black,
+              ),
+            ],
+          ),
         ),
       ),
     );
